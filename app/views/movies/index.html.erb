@@ -1,0 +1,9 @@
+<h1> Welcome </h1>
+
+<ol>
+ <% @movies.each do |movie| %>
+ <li><%= movie.title%></li>
+ <% end %>
+</ol>
+
+ <%= link_to "Add a new movie", new_movie_path %>
